@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sqlite3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\rapidjson\;CMake Files\libs\rapidjson\doc\;CMake Files\libs\rapidjson\example\;CMake Files\libs\rapidjson\test\;CMake Files\libs\rapidjson\CMakeModules\;CMake Files\libs\sqlite3\;CMake Files\src\;CMake Files\src\filesystem\;CMake Files\src\filesystem\linux\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/piotr/Projects/Tracker/libs/sqlite3"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sqlite3">
+				<Option output="/home/piotr/Projects/Tracker/libs/sqlite3/libsqlite3.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/piotr/Projects/Tracker/libs/sqlite3"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/piotr/Projects/Tracker/src"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 sqlite3"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sqlite3/fast">
+				<Option output="/home/piotr/Projects/Tracker/libs/sqlite3/libsqlite3.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/piotr/Projects/Tracker/libs/sqlite3"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/piotr/Projects/Tracker/src"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 sqlite3/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/piotr/Projects/Tracker/libs/sqlite3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/sqlite3/sqlite3.c">
+			<Option target="sqlite3"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/sqlite3/sqlite3.h">
+			<Option target="sqlite3"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\rapidjson\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/RapidJSON.pc.in">
+			<Option virtualFolder="CMake Files\libs\rapidjson\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/RapidJSONConfig.cmake.in">
+			<Option virtualFolder="CMake Files\libs\rapidjson\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/RapidJSONConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\libs\rapidjson\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\rapidjson\doc\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\rapidjson\example\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\rapidjson\test\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/rapidjson/CMakeModules/FindGTestSrc.cmake">
+			<Option virtualFolder="CMake Files\libs\rapidjson\CMakeModules\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/libs/sqlite3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\sqlite3\"/>
+		</Unit>
+		<Unit filename="/home/piotr/Projects/Tracker/src/filesystem/linux/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\filesystem\linux\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

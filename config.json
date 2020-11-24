@@ -1,0 +1,10 @@
+{
+  "log_level": 1,
+  "log_file": "log_file.log",
+  "database": "database.db",
+  "directories": [
+    {"path": "src", "tracking": ["files", "time"]},
+    {"path": "libs", "tracking": ["files", "time"]},
+    {"path": "sql", "tracking": ["files", "time"]}
+  ]
+}
