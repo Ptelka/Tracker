@@ -4,7 +4,6 @@
 #include "logger/Logger.h"
 
 #include <cstring>
-#include <utility>
 #include <zconf.h>
 
 #include <iostream>
@@ -23,10 +22,12 @@ InotifyWatcher::InotifyWatcher(std::string path)
 }
 
 void InotifyWatcher::addListener(Listener *listener) {
+    std::lock_guard<std::mutex> guard(mutex);
     listeners.push_back(listener);
 }
 
 void InotifyWatcher::removeListener(Listener *listener) {
+    std::lock_guard<std::mutex> guard(mutex);
     listeners.remove(listener);
 }
 
@@ -43,9 +44,8 @@ void InotifyWatcher::start() {
 }
 
 bool InotifyWatcher::select() {
-    fd_set descriptors;
+    fd_set descriptors {};
 
-    FD_ZERO(&descriptors);
     FD_SET(inotify.descriptor, &descriptors);
 
     timeval timeout {1, 0};

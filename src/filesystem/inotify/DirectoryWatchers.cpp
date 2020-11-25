@@ -36,7 +36,6 @@ void DirectoryWatchers::watch(const std::string &path) {
 
 void DirectoryWatchers::remove(const std::string& path) {
     auto watch = watchers.find(path);
-
     paths.erase(watch->second.id);
     watchers.erase(watch);
 }
